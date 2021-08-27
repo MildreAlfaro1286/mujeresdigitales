@@ -12,6 +12,98 @@
 </head>
 <body>
 
+    <script>
+
+        var valor1= 30;
+        var valor2= 15;
+        var nombre= 'mildre'
+        var apellido= 'alfaro'
+
+        var multiplica = function(){
+            console.log(valor1 *valor2)
+        }
+           
+
+            var suma= function(){
+                console.log(valor1 + valor2)
+            }
+           
+
+            var resta= function(){
+                console.log(valor1 - valor2)
+            }
+            
+
+            var dividir= function(){
+                console.log(valor1 / valor2)
+            }
+
+            var nombrecompleto=function(){
+                console.log(nombre + ' ' + apellido)
+            }
+            var obtener = function(){
+                console.log('obteniendo datos')
+                var a= document.getElementById('prueba1').value
+                console.log(a)
+            }
+
+            
+        
+        </script>
+
+        <input type="text" id="prueba1">
+        <input type="text" id="prueba2">
+
+
+    <div onclick="multiplica()">multiplicar</div>
+    <div onclick="suma()">sumar</div>
+    <div onclick="resta()">restar</div>
+    <div onclick="dividir()">dividir</div>
+    <div onclick="nombrecompleto()">nombrecompleto</div>
+    <div onclick="obtener()">obtener contenido</div>
+
+
+    
+    <style>
+
+        .flex-container{
+            display: flex;
+    background: tomato;
+    height: 219px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+}
+           
+        .flex-container div{
+
+            width: 10px;
+            margin: 10px;
+            background: turquoise;
+            line-height: 75px;
+        }
+
+
+
+    </style>
+
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+
+</div>
+
 
 <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos, aperiam totam assumenda a odio numquam laborum cum pariatur eius debitis impedit eligendi. Illum laudantium praesentium assumenda quas enim? Deleniti?</P>
 
