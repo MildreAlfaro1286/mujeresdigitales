@@ -4,197 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi primera pagina</title>
+    <title>calculadora</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./index/index.css">
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"defer></script>
 
 
 </head>
 <body>
 
-    <script>
+    <div  class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
 
-        var valor1= 30;
-        var valor2= 15;
-        var nombre= 'mildre'
-        var apellido= 'alfaro'
-
-        var multiplica = function(){
-            console.log(valor1 *valor2)
-        }
-           
-
-            var suma= function(){
-                console.log(valor1 + valor2)
-            }
-           
-
-            var resta= function(){
-                console.log(valor1 - valor2)
-            }
+            </div>
             
+            <button class="col-2"onclick="display.borrarTodo()">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">X</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="col-2 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
 
-            var dividir= function(){
-                console.log(valor1 / valor2)
-            }
-
-            var nombrecompleto=function(){
-                console.log(nombre + ' ' + apellido)
-            }
-            var obtener = function(){
-                console.log('obteniendo datos')
-                var a= document.getElementById('prueba1').value
-                console.log(a)
-            }
-
-            
-        
-        </script>
-
-        <input type="text" id="prueba1">
-        <input type="text" id="prueba2">
-
-
-    <div onclick="multiplica()">multiplicar</div>
-    <div onclick="suma()">sumar</div>
-    <div onclick="resta()">restar</div>
-    <div onclick="dividir()">dividir</div>
-    <div onclick="nombrecompleto()">nombrecompleto</div>
-    <div onclick="obtener()">obtener contenido</div>
-
-
-    
-    <style>
-
-        .flex-container{
-            display: flex;
-    background: tomato;
-    height: 219px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-content: stretch;
-}
-           
-        .flex-container div{
-
-            width: 10px;
-            margin: 10px;
-            background: turquoise;
-            line-height: 75px;
-        }
-
-
-
-    
-    
-    
-
-<P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos, aperiam totam assumenda a odio numquam laborum cum pariatur eius debitis impedit eligendi. Illum laudantium praesentium assumenda quas enim? Deleniti?</P>
-
-    <header>
-        aqui van los logos
-
-    </header>
-
-    <nav>
-        aqui van los menus
-
-    </nav>
-    
-    <section>
-        aqui va la seccion
-
-    <h1 style="color: red;">hola mundo</h1>
-    <h2 style="color: blue;">hola mundo</h2>
-    <h3 style="color: gray;">hola mundo</h3>
-    <h4 style="color: orange;class="tamano_55">hola mundo</h4>
-    
-
-    </section class="centrado">
-
-    <footer>
-        pie de pagina
-
-    </footer>
-
-<div id="holasoyid" class="fondo centrado tamano_20">
-    +
-</div> 
-
-<div id="holasoyid2" class="fondo centrado">
-    -
-</div>
-
-<input type="text" id="txt_nombre" class="txtcaja" placeholder="nombre" maxlength="20">
-<input type="number" id="txt_cedula" class="txtcaja" placeholder="cedula">
-<input type="password" id="txt_password" class="txtcaja" placeholder="password">
-<input type="date" id="txt_fechanacimiento">
-<input type="file" id="subirarchivos">
-
-<table>
-<tr>
-    <th>encabezado</th>
-    
-</tr>
-
-<tr>
-    <td id="color especial">mildre</td>
-    <td>alfaro</td>
-    <td>calle 50 n 33</td>
-
-</tr>
-
-<tr>
-    <td>marina</td>
-    <td>ardila</td>
-    <td>calle 52 n 32</td>
-
-</tr>
-
-<tr>
-    <td>eduardo</td>
-    <td>alfaro</td>
-    <td>calle 53 n 35</td>
-
-</tr>
-
-</table>
-
-
-<ul id="color rojo">
-    <li>lista 1</li>
-    <li>lista 2</li>
-    <li>lista 3</li>
-    <li>lista 4</li>
-</ul>
-
-<a href="contactenos.html">contactenos</a>
-<a href="contactenos.html">
-    <img src="https://i.servimg.com/u/f20/15/60/34/98/splat110.png"
-    style=" width: 20px;  height 20px;">
-</a>
-
-<label for="genero">selecciona el genero</label>
-<select name="genero" id="genero">
-
-    <option value="f"> femenino</option>
-    <option value="m"> masculino</option>
-
-
-</select>
-
-<img src="https://i.servimg.com/u/f20/15/60/34/98/splat110.png">
-
-<textarea id="comentarios" maxlength="15"placeholder="descipcion" class="btn"></textarea>
-
-
-<input type="button" value="enviar" class="btn" id="elboton">
-
-<div id="otroboton" class="btn">enviar</div>
-
-<div id="otroboton2" class="btn"> borrar</div>
-
+        </div>
+    </div>
 
 </body>
 </html 
