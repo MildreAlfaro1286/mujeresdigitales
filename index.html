@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora</title>
+    <title>mi primera pagina</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./index/index.css">
     <script src="Display.js" type="text/javascript"></script>
@@ -14,6 +14,149 @@
 
 </head>
 <body>
+    <script>
+        var valor1= 30;
+        var valor2= 15;
+        var nombre= 'mildre'
+        var apellido= 'alfaro'
+
+        var multiplica = function(){
+            console.log(valor1 *valor2)
+        }
+
+        var suma= function(){
+            console.log(valor1 + valor2)
+        }
+
+        var resta= function(){
+            console.log(valor1 - valor2)
+        }    
+
+        var dividir= function(){
+            console.log(valor1 / valor2)
+        }
+
+        var nombrecompleto=function(){
+            console.log(nombre + ' ' + apellido)
+        }
+
+            
+        var obtener = function(){
+            console.log('obteniendo datos')
+            var a= document.getElementById('prueba1').value
+            var b= document.getElementById('prueba2').value
+            valor1 = parseInt(a);
+            valor2 = parseInt(b);          
+        }
+        
+        for (var a = 0; a <= 20; a++) {
+
+            console.log('5 ' + ' x ' + a + ' = ' + (5 * a))
+
+        }
+
+        for(var pedro = 0; pedro >= 5; pedro++){
+            console.log(pedro)
+        }
+
+        var dato1 = 4
+        var dato2 = 5
+
+        if (true)
+        {
+            console.log('si se cumplio la condicion')
+
+
+        }
+        else
+        {
+            console.log('no se cumplio la condicion')
+
+
+        }
+
+        var nombre = ''
+        while (nombre == '') {
+            
+            console.log('imprimir')
+
+            nombre = 'jhon'
+        }
+
+
+
+        var booEstado = true
+        var contador = 0;
+        while (booEstado){
+
+            contador = contador + 1;
+
+            console.log('Imprimir')
+
+            if(contador ==5){
+                booEstado = false;
+            }
+        }
+
+        if (true){
+
+        }
+
+        var dato = 100;
+        var analizar = function(){
+
+            if(dato == 100){
+                console.log('100')
+
+                
+            }
+
+            if(dato == 200){
+                console.log('200')
+
+                
+            }
+
+            if(dato == 300){
+                console.log('300')
+
+                
+            }
+
+            if(dato != 100 && dato != 200 && dato != 300){
+                console.log('ninguno')
+            }
+
+            dato = dato + 100
+        }
+
+        
+
+        
+
+
+    </script>
+
+    <input type="text" id="prueba1">
+    <input type="text" id="prueba2">
+
+
+<div onclick="multiplica()">multiplicar</div>
+<div onclick="suma()">sumar</div>
+<div onclick="resta()">restar</div>
+<div onclick="dividir()">dividir</div>
+<div onclick="nombrecompleto()">nombrecompleto</div>
+<div onclick="obtener()">obtener contenido</div>
+<div onclick="analizar()">analizar</div>
+
+
+<a href="contactenos.html">contactenos</a>
+<a href="contactenos.html">
+    <img src="https://i.servimg.com/u/f20/15/60/34/98/splat110.png"
+    style=" width: 20px;  height: 20px;">
+</a>
+
+
 
     <div  class="container">
         <div class="calculadora">
@@ -46,4 +189,4 @@
     </div>
 
 </body>
-</html 
+</html>
