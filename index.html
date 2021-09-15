@@ -9,134 +9,11 @@
     <link rel="stylesheet" href="./index/index.css">
     <script src="Display.js" type="text/javascript"></script>
     <script src="Calculadora.js" type="text/javascript"></script>
-    <script src="index.js" type="text/javascript"defer></script>
-
+    
 
 </head>
 <body>
-    <script>
-        var valor1= 30;
-        var valor2= 15;
-        var nombre= 'mildre'
-        var apellido= 'alfaro'
-
-        var multiplica = function(){
-            console.log(valor1 *valor2)
-        }
-
-        var suma= function(){
-            console.log(valor1 + valor2)
-        }
-
-        var resta= function(){
-            console.log(valor1 - valor2)
-        }    
-
-        var dividir= function(){
-            console.log(valor1 / valor2)
-        }
-
-        var nombrecompleto=function(){
-            console.log(nombre + ' ' + apellido)
-        }
-
-            
-        var obtener = function(){
-            console.log('obteniendo datos')
-            var a= document.getElementById('prueba1').value
-            var b= document.getElementById('prueba2').value
-            valor1 = parseInt(a);
-            valor2 = parseInt(b);          
-        }
-        
-        for (var a = 0; a <= 20; a++) {
-
-            console.log('5 ' + ' x ' + a + ' = ' + (5 * a))
-
-        }
-
-        for(var pedro = 0; pedro >= 5; pedro++){
-            console.log(pedro)
-        }
-
-        var dato1 = 4
-        var dato2 = 5
-
-        if (true)
-        {
-            console.log('si se cumplio la condicion')
-
-
-        }
-        else
-        {
-            console.log('no se cumplio la condicion')
-
-
-        }
-
-        var nombre = ''
-        while (nombre == '') {
-            
-            console.log('imprimir')
-
-            nombre = 'jhon'
-        }
-
-
-
-        var booEstado = true
-        var contador = 0;
-        while (booEstado){
-
-            contador = contador + 1;
-
-            console.log('Imprimir')
-
-            if(contador ==5){
-                booEstado = false;
-            }
-        }
-
-        if (true){
-
-        }
-
-        var dato = 100;
-        var analizar = function(){
-
-            if(dato == 100){
-                console.log('100')
-
-                
-            }
-
-            if(dato == 200){
-                console.log('200')
-
-                
-            }
-
-            if(dato == 300){
-                console.log('300')
-
-                
-            }
-
-            if(dato != 100 && dato != 200 && dato != 300){
-                console.log('ninguno')
-            }
-
-            dato = dato + 100
-        }
-
-        
-
-        
-
-
-    </script>
-
+    
     <input type="text" id="prueba1">
     <input type="text" id="prueba2">
 
@@ -148,6 +25,22 @@
 <div onclick="nombrecompleto()">nombrecompleto</div>
 <div onclick="obtener()">obtener contenido</div>
 <div onclick="analizar()">analizar</div>
+
+<input type="text" id="minombre" class="pruebax">
+<div onclick="agregarinformacion()">agregar dato</div> 
+
+<div id="contenedordedatos">
+vacio
+
+</div>
+
+<div id="tablademultiplicar">
+
+</div>
+
+<div onclick="agregarcontenido()" >agregar</div>
+<div onclick="mostrardatos()" >mostrar</div>
+
 
 
 <a href="contactenos.html">contactenos</a>
@@ -187,6 +80,6 @@
 
         </div>
     </div>
-
+    <script src="index.js" type="text/javascript"defer></script> 
 </body>
 </html>
