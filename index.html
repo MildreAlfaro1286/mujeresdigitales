@@ -7,21 +7,39 @@
     <title>Mi primera pagina</title>
     <link rel="stylesheet" href="./style.css" >
     <link rel="stylesheet" href="./index/index.css">
-    <script src="./index.js"></script> 
+     
 
 </head>
 </head>
 <body>
+    <style>
+        #nombre{
+            background: aqua;
+        }
+        
+        #nombre:hover{
+            background: blueviolet;
 
+
+        }
+
+
+
+    </style>
 <input type="text" id="nombre" placeholder="nombre">
 <input type="text" id="apellido" placeholder="apellido">
 <div onclick="guardar()">guardar</div>
 <div onclick="cargar()">cargar</div>
+<div onclick="eliminarlocal()">Eliminar local storage</div>
 
 <a href="contactenos.html">contactenos</a>
 <a href="contactenos.html">
     <img src="https://i.servimg.com/u/f20/15/60/34/98/splat110.png"
     style=" width: 20px;  height: 20px;">
 </a>
+
+<script src="./index.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 </html>
