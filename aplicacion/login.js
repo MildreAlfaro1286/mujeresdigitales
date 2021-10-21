@@ -55,6 +55,8 @@ var iniciarsesion = function(){
         //mensajeria('el email es obligatorio', 'success')
         return false;
     }
+    
+    validarpassword()
 
 
     if(password == null || password == '' || password == undefined){
